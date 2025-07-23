@@ -13,7 +13,8 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorCommunityMedia.podspec"
+    "CapacitorCommunityMedia.podspec",
+    "src/"
   ],
   "keywords": [
     "capacitor",
