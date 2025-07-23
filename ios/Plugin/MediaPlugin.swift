@@ -348,7 +348,13 @@ public class MediaPlugin: CAPPlugin {
             var o = JSObject()
             o["name"] = collection.localizedTitle
             o["identifier"] = collection.localIdentifier
-            o["type"] = "user"
+            
+            if collection is PHCollectionList {
+                o["type"] = "folder"
+            } else {
+                o["type"] = "user"
+            }
+                                                                                   
             albums.append(o)
         })
 
